@@ -99,7 +99,7 @@
                 <label for="lastName">Last Name</label>
                 <input type="text" id="lastName" name="lastName" required>
             </div>
-            
+           
             <!-- Email Field -->
             <div class="inputbox">
                 <label for="email">Email</label>
@@ -111,6 +111,12 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
+ 	   <!-- Alternate Phone Number Field -->
+             <div class="inputbox">
+                <label for="Alternate phone">Alternate Phone Number</label>
+                <input type="tel" id="Alternate phone" name="Alternate phone" required>
+            </div>
+
             
             <!-- Submit Button -->
             <button type="submit" class="submit-btn">Register</button>
@@ -119,7 +125,7 @@
             <div id="successMessage" class="success-message" style="display: none;">
                 Thank you for registering!
             </div>
-        </form>
+        </orm>
     </div>
 
     <script>
@@ -128,7 +134,7 @@
         const successMessage = document.getElementById('successMessage');
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
+         event.preventDefault(); // Prevent the default form submission behavior
 
             // Display the success message
             successMessage.style.display = 'block';
