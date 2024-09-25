@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> User Resitration-Competitive Exam </title>
+<link rel="stylesheet" type="text/css" href="registration_form.css">
+</head>
+<body>
+<div class="container">
+<form name="f1">
+<marquee> <h2> Registration Form </h2></marquee>
+First Name: <br><input type="text" id="firstname"><br>
+Last Name: <br><input type="text" id="lastname"><br>
+Father's Name: <br><input type="text" id="fathername"><br>
+Mother's Name: <br><input type="text" id="mothername"><br>
+Email: <br><input type="text" id="email"><br>
+Phone number: <br><input type="number" id="pno"><br>
+Date of Birth: <br><input type="date" id="dob"><br>
+Gender: <br>
+<select id="gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select><br>
+Highest Education Qualification: <br>
+<select id="qualification">
+<option value="Post Graduation">Post Graduation</option>
+<option value="Graduation">Gradudation</option>
+<option value="Under Graduation">Under Gradudation</option>
+ </select><br>
+ Qualification type: <br> <input type="text" id="qualitype" ><br>
+ Upload passport size photo: <br> <input type="file" accept="image/*" id="passpic"><br>
+ Upload signature: <br> <input type="file" accept="image/*" id="sign"><br>
+ <input type="button" value="Submit" onclick="get_info();">
+ <input type="reset" value="Reset">
+ </form>
+</div>
+ <script src="registration_form.js">
+ </script>
+
+ </body>
+ <html>
